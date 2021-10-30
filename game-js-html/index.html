@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="text-center">
+
+  <!-- Add your site or application content here -->
+<div >
+  <h1>Welcome to board game</h1> 
+  <h2>Please select the modes</h2>
+  <select name="modes" onChange='changedSelection(this)'>
+    <option value="none">Please Select</option>
+    <option value="3"> Easy 3X3</option>
+    <option value="4"> Medium 4x4</option>
+    <option value="6"> Hard 6x6</option>
+    
+</select>
+
+</div>
+<div>
+  <div class="wrapper">
+    <div id="countdown">
+      2:00
+    </div>
+      <button>CHANGE</button>
+    </div>
+  
+  <div class="row">
+    <div class="highest col-sm-6">Heighest Score: <span>2</span></div>
+    <div class="currentscore col-sm-6">Your Score: <span>0</span></div>
+  </div>
+</div>
+
+<div class="cellholder">
+
+</div>
+
+<div class='restart'>
+  <button type="button" class="btn btn-primary" onclick="window.location.reload()">Restart</button>
+</div>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+
+</html>
